@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f4f7fb">
+<title>Student Registration Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="page">
+<section class="form-card">
+<h1>Student Registration Form</h1>
+<form id="registration-form">
+
+<div class="form-group">
+<label for="full-name">Full Name</label>
+<input id="full-name" name="fullName" type="text" placeholder="Enter your name" autocomplete="name" required>
+</div>
+
+<div class="form-group">
+<label for="father-name">Father's Name</label>
+<input id="father-name" name="fatherName" type="text" placeholder="Enter father's name" required>
+</div>
+
+<div class="form-group">
+<label for="dob">Date of Birth</label>
+<input id="dob" name="dob" type="date" required>
+</div>
+
+<div class="form-group">
+<label for="email">Email</label>
+<input id="email" name="email" type="email" placeholder="Enter email" autocomplete="email" required>
+</div>
+
+<div class="form-group">
+<label for="phone">Phone Number</label>
+<input id="phone" name="phone" type="tel" placeholder="Enter phone number" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" autocomplete="tel" title="Enter a 10-digit phone number" required>
+</div>
+
+<fieldset class="form-group choice-group">
+<legend>Gender</legend>
+<label class="choice"><input type="radio" name="gender" value="Male" required> Male</label>
+<label class="choice"><input type="radio" name="gender" value="Female"> Female</label>
+</fieldset>
+
+<div class="form-group">
+<label for="course">Course</label>
+<select id="course" name="course" required>
+<option value="">Select Course</option>
+<option value="B.Tech">B.Tech</option>
+<option value="BCA">BCA</option>
+<option value="MCA">MCA</option>
+<option value="BBA">BBA</option>
+<option value="MBA">MBA</option>
+<option value="B.Sc">B.Sc</option>
+<option value="M.Sc">M.Sc</option>
+<option value="BA">BA</option>
+<option value="MA">MA</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="address">Address</label>
+<textarea id="address" name="address" placeholder="Enter your address" rows="3" required></textarea>
+</div>
+
+<fieldset class="form-group choice-group hobbies-group">
+<legend>Hobbies</legend>
+<label class="choice"><input type="checkbox" name="hobbies" value="Reading"> Reading</label>
+<label class="choice"><input type="checkbox" name="hobbies" value="Music"> Music</label>
+<label class="choice"><input type="checkbox" name="hobbies" value="Sports"> Sports</label>
+</fieldset>
+
+<div class="actions">
+<button class="register-button" type="submit">Register</button>
+<button class="clear-button" type="reset">Clear</button>
+</div>
+<p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+
+</form>
+</section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

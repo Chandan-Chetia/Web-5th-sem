@@ -1,0 +1,133 @@
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+main{
+padding:0 16px;
+}
+
+@media (min-width: 1024px){
+main{
+padding:0 300px;
+}
+}
+
+.intro{
+justify-content:left;
+}
+
+.a{
+color:white;
+display:flex;
+gap:50px;
+}
+
+nav{
+background-color:black;
+padding:10px;
+justify-content:center;
+display:flex;
+}
+
+h2{
+color:#244269;
+justify-content:center;
+display:flex;
+}
+
+p{
+justify-content:center;
+display:flex;
+}
+
+button{
+color:white;
+background-color:#244269;
+border-radius:5px;
+padding:10px;
+
+}
+
+.learn{
+justify-content:center;
+display:flex;
+}
+
+.box{
+justify-content:center;
+display:flex;
+gap:20px;
+}
+
+.course{
+border-top:2px solid white;
+border-bottom:2px solid white;
+border-right:2px solid white;
+border-left:2px solid white;
+flex-direction:column;
+justify-content:center;
+display:flex;
+border-radius:10px;
+box-shadow:0 0 10px black;
+padding:20px;
+}
+
+.contact{
+flex-direction:column;
+}
+
+.contact p{
+justify-content:flex-start;
+}
+
+.course h3{
+justify-content:center;
+display:flex;
+}
+
+.course p{
+text-align:center;
+}
+
+footer{
+padding:10px;
+color:white;
+background-color:black;
+}
+
+/* ---- Registration form ---- */
+.register-form{
+max-width:420px;
+margin:0 auto 20px;
+}
+
+.register-form label{
+display:block;
+margin-bottom:12px;
+font-weight:bold;
+font-size:14px;
+}
+
+.register-form input,
+.register-form select,
+.register-form textarea{
+width:100%;
+box-sizing:border-box;
+margin-top:4px;
+padding:9px;
+border:1px solid #bbb;
+border-radius:5px;
+font:inherit;
+font-weight:normal;
+}
+
+.register-form button{
+width:100%;
+cursor:pointer;
+}
+
+#form-message{
+margin:10px 0 0;
+font-size:14px;
+}

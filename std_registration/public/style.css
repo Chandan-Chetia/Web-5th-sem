@@ -1,0 +1,177 @@
+*{
+box-sizing:border-box;
+}
+
+body{
+min-height:100vh;
+margin:0;
+padding:38px 18px;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#f4f7fb;
+color:#292d33;
+font-family:Arial, Helvetica, sans-serif;
+font-size:14px;
+}
+
+.page{
+width:100%;
+display:flex;
+justify-content:center;
+}
+
+.form-card{
+width:min(100%, 440px);
+padding:27px 25px 24px;
+background:#fff;
+border:1px solid #e7ebf0;
+border-radius:5px;
+box-shadow:0 5px 22px rgba(38, 55, 77, .07);
+}
+
+h1{
+margin:0 0 22px;
+color:#31577f;
+text-align:center;
+font-size:23px;
+font-weight:700;
+}
+
+.form-group{
+min-width:0;
+margin:0 0 12px;
+}
+
+.form-group > label:not(.choice),
+.form-group legend{
+display:block;
+margin-bottom:5px;
+padding:0;
+color:#333941;
+font-size:13px;
+font-weight:700;
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+select,
+textarea{
+display:block;
+width:100%;
+min-height:36px;
+padding:8px 10px;
+border:1px solid #d9dee6;
+border-radius:4px;
+outline:none;
+background:#fff;
+color:#30343a;
+font:inherit;
+font-size:12px;
+}
+
+textarea{
+min-height:61px;
+resize:vertical;
+}
+
+input::placeholder,
+textarea::placeholder{
+color:#a0a6ae;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+border-color:#315f9b;
+box-shadow:0 0 0 3px rgba(49, 95, 155, .16);
+}
+
+.choice-group{
+padding:0;
+border:0;
+}
+
+.choice-group legend{
+margin-bottom:5px;
+}
+
+.choice{
+display:inline-flex;
+align-items:center;
+gap:4px;
+margin-right:10px;
+color:#454b53;
+font-size:12px;
+font-weight:400;
+cursor:pointer;
+}
+
+.choice input{
+margin:0;
+accent-color:#315f9b;
+}
+
+.hobbies-group{
+margin-top:2px;
+}
+
+.actions{
+display:flex;
+justify-content:center;
+gap:11px;
+margin-top:24px;
+}
+
+.actions button{
+min-width:72px;
+padding:9px 16px;
+border:0;
+border-radius:4px;
+color:white;
+font-size:12px;
+cursor:pointer;
+}
+
+.register-button{
+background:#315f9b;
+}
+
+.register-button:hover{
+background:#244b7d;
+}
+
+.clear-button{
+background:#a18a58;
+}
+
+.clear-button:hover{
+background:#897448;
+}
+
+.form-message{
+min-height:18px;
+margin:12px 0 0;
+text-align:center;
+font-size:12px;
+}
+
+.form-message.success{
+color:#247447;
+}
+
+.form-message.error{
+color:#b3261e;
+}
+
+@media (max-width: 480px){
+body{
+padding:18px 12px;
+align-items:flex-start;
+}
+.form-card{
+padding:23px 18px;
+}
+h1{
+font-size:21px;
+}
+}

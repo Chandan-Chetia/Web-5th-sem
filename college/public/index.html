@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>College website</title>
+<link href="style.css" rel="stylesheet" >
+</head>
+
+<body>
+<h1>University of Science and Technology Meghalaya</h1>
+<p class="intro">Knowledge|Innovation|Excellence</p>
+<nav>
+<div class="a">
+<a style="color: white;" href="#home">Home</a>
+<a style="color: white;" href="#about">About</a>
+<a style="color: white;" href="#courses">Courses</a>
+<a style="color: white;" href="#facilities">Facilities</a>
+<a style="color: white;" href="#contact">Contact</a>
+</div>
+</nav>
+
+<main>
+<div>
+<h2 id="home">Welcome to USTM</h2>
+<p>
+Welcome to USTM. We provide quality education and prepare students for a successful future.
+</p>
+
+<div class="learn">
+<button>Learn More</button>
+</div>
+
+</div>
+
+<div>
+<h2 id="about">About Us</h2>
+<p>
+USTM College was established with the aim of providing excellent education in science, technology and management. Our 
+college provides experienced faculty, modern laboratories, a library and various extracurricular activities.
+</p>
+</div>
+
+<h2 id="courses">Courses Offered</h2>
+
+<div class="box">
+<div class="course">
+<h3>BCA</h3>
+<p>Bachelor of Computer Applications</p>
+</div>
+
+<div class="course">
+<h3>BBA</h3>
+<p>Bachelor of Business Administration</p>
+</div>
+
+<div class="course">
+<h3>B.Sc IT</h3>
+<p>Bachelor of Scince in Information Technology</p>
+</div>
+</div>
+
+<h2 id="facilities">Our Facilities</h2>
+
+<div>
+<ul>
+<li>Modern Computer Laboratory</li>
+<li>Central Library</li>
+<li>Sports Ground</li>
+<li>Smart Classrooms</li>
+<li>Wi-Fi Campus</li>
+</ul>
+</div>
+
+<h2>Student Registration</h2>
+
+<form id="register-form" class="register-form">
+<label>Full Name <input type="text" name="name" required></label>
+<label>Department
+<select name="department" required>
+<option value="">-- Select Department --</option>
+<option value="BCA">BCA</option>
+<option value="BBA">BBA</option>
+<option value="B.Sc IT">B.Sc IT</option>
+</select>
+</label>
+<label>Email <input type="email" name="email" required></label>
+<label>Phone <input type="tel" name="phone" pattern="[0-9]{10}" title="Enter 10 digit number" required></label>
+<label>Address <textarea name="address" rows="3" required></textarea></label>
+<button type="submit">Register</button>
+<p id="form-message"></p>
+</form>
+
+<h2 id="contact">Contact Us</h2>
+
+<div class="contact">
+<p><b>Address:</b>9th mile, Ghy, Assam</p>
+<p><b>Phone:</b>9854XXXXXX</p>
+<p><b>Email:</b>ustm@gmail.com</p>
+</div>
+</main>
+
+<footer>
+<p>©2026 University of Science and Technology Meghalaya</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book World - Online Book Store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header id="home">
+<h1>Book World</h1>
+<p>Your Online Book Store</p>
+</header>
+
+<!-- Navigation -->
+<nav>
+<a href="#home">Home</a>
+<a href="#books">Books</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<!-- Welcome Section -->
+<section class="welcome">
+<h2>Welcome to Book World</h2>
+<p>Find your favorite books at affordable prices.</p>
+</section>
+
+<!-- Popular Books -->
+<section id="books">
+<h2>Popular Books</h2>
+
+<div class="book-container">
+
+<div class="book-card">
+<h3>Web Technology</h3>
+<p>Author: ABC</p>
+<p>Learn HTML, CSS and JavaScript.</p>
+<h3>₹450</h3>
+<button onclick="buyBook('Web Technology', 450)">
+Buy Now
+</button>
+</div>
+
+<div class="book-card">
+<h3>Python Programming</h3>
+<p>Author: XYZ</p>
+<p>Learn Python programming from basics.</p>
+<h3>₹500</h3>
+<button onclick="buyBook('Python Programming', 500)">
+Buy Now
+</button>
+</div>
+
+<div class="book-card">
+<h3>Computer Networks</h3>
+<p>Author: PQR</p>
+<p>Introduction to computer networks.</p>
+<h3>₹400</h3>
+<button onclick="buyBook('Computer Networks', 400)">
+Buy Now
+</button>
+</div>
+
+<div class="book-card">
+<h3>Database Systems</h3>
+<p>Author: LMN</p>
+<p>Learn database concepts and SQL.</p>
+<h3>₹550</h3>
+<button onclick="buyBook('Database Systems', 550)">
+Buy Now
+</button>
+</div>
+
+</div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+<h2>About Book World</h2>
+<p>
+Book World is an online bookstore created to help
+students find educational books easily.
+</p>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+<h2>Contact Us</h2>
+<p>Email: bookworld@example.com</p>
+<p>Phone: 9876543210</p>
+</section>
+
+<!-- Footer -->
+<footer>
+<p>© 2026 Book World</p>
+</footer>
+
+<!-- Order popup -->
+<div class="modal" id="order-modal" hidden>
+<div class="modal-box">
+<button class="modal-close" id="close-order" aria-label="Close">×</button>
+<h2>Place Your Order</h2>
+<p class="selected-book" id="selected-book"></p>
+
+<form id="order-form">
+<input type="hidden" name="book" id="book-input">
+
+<label>Your Name
+<input type="text" name="name" required>
+</label>
+<label>Phone Number
+<input type="tel" name="phone" pattern="[0-9]{10}" title="Enter 10 digit number" required>
+</label>
+<label>Address
+<textarea name="address" rows="2" required></textarea>
+</label>
+<label>Quantity
+<input type="number" name="quantity" id="quantity" value="1" min="1" max="10" required>
+</label>
+
+<p class="total" id="total"></p>
+<button type="submit" class="submit-button">Submit Order</button>
+<p id="form-message"></p>
+</form>
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
